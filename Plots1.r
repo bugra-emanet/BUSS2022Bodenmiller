@@ -266,7 +266,7 @@ my_theme_bar <- theme(panel.grid.major.x = element_blank(),
                                       axis.ticks.length=unit(.05, "cm"))
 
 point <- format_format(big.mark = " ", decimal.mark = ".", scientific = FALSE)
-my_comparisons = list( c("mAAb+", "RecentOnset"),c("NoDiabetes", "RecentOnset"),c("LongDuration", "RecentOnset") )
+my_comparisons <- list( c("mAAb+", "RecentOnset"),c("NoDiabetes", "RecentOnset"),c("LongDuration", "RecentOnset") )
 
 
 p1 <- ggplot(data = immune_data_long, mapping = aes(y = score, x = donor_type, col = donor_type)) + geom_violin() + facet_wrap(~score_type,scales = "fixed",labeller =  function(x){
